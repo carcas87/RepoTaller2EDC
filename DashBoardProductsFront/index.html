@@ -1,0 +1,45 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontProducts</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div id="conteForm">
+            <form>
+                <h2>Productos</h2>
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="existencias" placeholder="Existencias">
+                <input type="text" id="precio" placeholder="Precio">
+                <input type="text" id="status" placeholder="Status">
+                <input type="submit" id="btnAgregar" value="AGREGAR"/>
+            </form>
+        </div>
+        <div id="conteTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Nombre  </th>
+                        <th>Existencias</th>
+                        <th>Precio</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="productsTableBody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+<!--archivos llamados desde otra ubicaicion-->
+    <script src="./js/models/Producto.js" ></script>
+    <script src="./js/db/producto.js" ></script>
+    <script src="./js/index.js" ></script>
+</body>
+</html>
